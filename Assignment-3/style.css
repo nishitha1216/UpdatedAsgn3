@@ -1,0 +1,343 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ACC6C7;
+}
+
+section {
+    font-family: Arial, sans-serif;
+    background-color: #ACC6C7;
+    line-height: 1.6;
+    margin: 0 2vw 2vw 2vw;
+}
+
+/* Full-width Navigation Bar */
+header {
+    background-color: cadetblue;
+    padding: 2vh 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 20px;
+}
+
+nav ul {
+    list-style: none;
+    width: 90vw;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    padding: 1.5vh 2vw;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ACC6C7;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2vw;
+    max-width: 100vw;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name-designation {
+    text-align: center;
+}
+
+.connect-btn {
+    margin-top: 3vh;
+    padding: 1vh 2vw;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.connect-btn:hover {
+    background-color: #ACC6C7;
+}
+
+/* Services Section */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjusting grid */
+    gap: 2vw;
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box {
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Experience Section */
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for blocks */
+    grid-template-rows: 2fr;
+    gap: 2vw; /* Added gap between blocks */
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Additional margin for spacing */
+}
+
+.experience-box {
+    background-color: #f0f0f0; /* Block-style background */
+    padding: 2vw;
+    border-radius: 5px;
+    margin-bottom: 2vh; /* Spacing between each block */
+    display: grid;
+    grid-template-columns: 100px auto; /* Image and text side by side */
+    grid-template-rows: 1fr;
+    gap: 1vw;
+    align-items: center;
+}
+
+.experience-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.experience-text h2 {
+    margin-bottom: 1vh;
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2vw; 
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; 
+}
+
+.project-box {
+    background-color: #f0f0f0; 
+    padding: 2vh; 
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.project-box:hover {
+    transform: translateY(-5px); 
+}
+
+.project-box img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 1.5rem; 
+    margin-top: 1vh; 
+    font-weight: bold; 
+}
+
+.project-description {
+    font-size: 1rem; /* Description size */
+    margin-top: 0.5vh; /* Space above description */
+}
+
+/* Education and Certificates Section */
+.edu-cert-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw; 
+    padding: 2vh 2vw;
+    margin: 5px; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.edu-box, .cert-box {
+    padding: 2vh 2vw; /* Add padding */
+}
+
+.edu-title, .cert-title {
+    font-size: 1.5rem; 
+    margin-bottom: 1vh; 
+    font-weight: bold; 
+}
+
+.edu-item, .cert-item {
+    margin-bottom: 1vh; /* Spacing between items */
+}
+
+/* My Other Works Section */
+.my-other-works-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Blogs and Contact side by side */
+    gap: 2vw;
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blogs Section */
+.blogs-container {
+    height: 400px; 
+    overflow-y: auto; 
+    border: 1px solid #ccc; 
+    padding: 1vh; 
+}
+
+/* Blog Item Style */
+.blog-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    gap: 1vw;
+    margin-bottom: 1vh; 
+
+.blog-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-me-container {
+    height: 400px; 
+    padding: 1vh; 
+    border: 1px solid #ccc; 
+}
+
+/* Contact Item Style */
+.contacts {
+    margin-bottom: 2vh;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: cadetblue;
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin: 20px;
+}
+
+.contact-btn:hover {
+    background-color: #ACC6C7;
+}
+
+.contact-btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1vw;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    background-color: cadetblue;
+    padding: 1vh 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 1058px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    nav ul li {
+        display: block; /
+        margin: 1vh 0; 
+    }
+
+    nav ul li a {
+        font-size: 2.5vh; 
+        padding: 1vh 5vw; 
+        display: block; 
+        text-decoration: none;
+        background-color: #ACC6C7;
+        color: white;
+        transition: background 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #5F9EA0;
+        border-radius: 5px;
+    }
+    
+}
